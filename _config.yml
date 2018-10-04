@@ -25,6 +25,11 @@ github_username:  invaderb
 
 # Build settings
 markdown: kramdown
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
 #theme: minima
 plugins:
   - jekyll-feed

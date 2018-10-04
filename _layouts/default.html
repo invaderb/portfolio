@@ -12,28 +12,29 @@
 </head>
 
 <body>
+    {% include navigation.html %}
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
-    {% include navigation.html %}
+    
     <div class="container">
         {{ content }}
-
         {%- if site.posts.size > 0 -%}
         <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-        <div class="grid">
+        <div class="masonry-layout margin--right--20 margin--left--60">
             {%- for post in site.posts -%}
-            <div class="item">
+            <div class="masonry-layout-panel">
                 <div class="content">
-                        {{ post.title | escape }}
-                    <img src="{{ post.img_url | relative_url }}" alt="" srcset="">
+                    <a class="post-link" href="{{ post.url | relative_url }}">
+                        <!-- {{ post.title | escape }} -->
+                        <img src="{{ post.img_url | relative_url }}" class="thumbnail">
+                    </a>
                 </div>
             </div>
             {%- endfor -%}
         </div>
 
-        <hr>
-
+        
         <!-- <ul class="post-list">
             {%- for post in site.posts -%}
             <li>
@@ -54,7 +55,10 @@
         <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
         {%- endif -%}
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
     <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    
 </body>
 
 </html>
