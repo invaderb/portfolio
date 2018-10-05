@@ -12,7 +12,11 @@ a {
 }
 
 .logo {
-    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    &_svg{
+        width: 100%;
+    }
 }
 
 .container {
@@ -96,7 +100,6 @@ a {
         left: 0;
         top: 0;
         bottom: 0;
-        padding-top: 100px;
         /*Animate content area to the right*/
         transition: 0.5s;
         overflow: hidden;
@@ -135,6 +138,7 @@ a {
         color: #fff;
         padding: 0;
         width: 200px;
+        margin-top: -10px;
 
         & li {
             list-style-type: none;
