@@ -1,0 +1,12 @@
+.about {
+    height: 500px;
+    margin-bottom: 650px;
+
+    ul {
+        list-style: none;
+        & li {
+            display: inline;
+            padding: 0 32px 0 0;
+        }
+    }
+}

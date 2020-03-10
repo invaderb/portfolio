@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+$main-blue: #1B2735;
+$main-dark: #090A0F;
+$background: #212121;
+$white: #ffffff;
+$main-light: #EEEEEE;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Futura, "Helvetica Neue", sans-serif; }
+
+html {
+    background: radial-gradient(ellipse at bottom, $main-blue 0%, $main-dark 100%);
+}
+
+h1{
+    font-size: 60px;
+    color: $main-light;
+    text-transform: uppercase;
+}
+
+p,li,a {
+    font-family: "Helvetica";
+    font-size: 14px;
+    color: $main-light;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    display: inline-flex;
+    &_svg{
+        fill: $main-light;
+        width: 35%;
+    }
+}
+
+.container {
+    max-width: 1250px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.skewedBoxRight {
+    background: $background;
+    &:before {
+        content: "";
+        height: 140px;
+        top: -70px;
+        bottom: 0;
+        background: #212121;
+        -webkit-transform: skew(0deg, -7deg);
+        transform: skew(0deg, -3deg);
+        display: block;
+        position: relative;
+
+    }
+}
+.skewedBoxLeft {
+    background: $background;
+    &:before {
+        content: "";
+        height: 140px;
+        top: -70px;
+        bottom: 0;
+        background: #212121;
+        -webkit-transform: skew(0deg, 3deg);
+        transform: skew(0deg, 3deg);
+        display: block;
+        position: relative;
+
+    }
+}
+
+// Spacing helpers
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .margin-#{$side}--#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+  
+    .padding-#{$side}--#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
