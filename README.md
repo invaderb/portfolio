@@ -33,16 +33,23 @@ https://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-wit
 https://www.kunkalabs.com/mixitup/
 https://www.queness.com/resources/html/simple-portfolio-page/index.html
 - finish skill section graph
-- finish contact section
+- finish contact section 
+- - add links
 - finish about section
+- - add links
+
+- themeing
+- - finsih palettes
+- - implement high contrast
+http://mcg.mbitson.com/#!?mcgpalette0=%231b2735&mcgpalette1=%23707070&mcgpalette2=%23eeeeee&mcgpalette3=%23090a0f&mcgpalette4=%23395ab5
+
 - finish CICD
 https://travis-ci.com/getting_started
-- implement material theme
-http://mcg.mbitson.com/#!?mcgpalette0=%231b2735&mcgpalette1=%23707070&mcgpalette2=%23eeeeee&mcgpalette3=%23090a0f&mcgpalette4=%23395ab5
-- implement high contrast
+
 - implement blog
+- - loading spinner
 https://braydonharriscom.prismic.io/documents/working/
-- loading spinner
+
 
 search for developer skill graph design example
 
