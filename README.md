@@ -29,10 +29,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 TODO: 
 - finish portfolio section
-https://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
-https://www.kunkalabs.com/mixitup/
-https://www.queness.com/resources/html/simple-portfolio-page/index.html
-- finish skill section graph
+- - add content
+- finish tech section
+- - add colored icons
+- - finish design elements small lines under headers animated icons
 - finish contact section 
 - - add links
 - finish about section

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import mixitup from 'mixitup';
 
 @Component({
   selector: 'app-portfolio',
@@ -10,6 +11,15 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let port = mixitup('#portfoliolist', {
+      selectors: {
+        target: '.portfolio-item'
+      },
+      animation: {
+        effects: 'fade translateZ(-100px)',
+        duration: 300
+      }  
+    })
   }
 
 }
