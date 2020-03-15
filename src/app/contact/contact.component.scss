@@ -1,0 +1,72 @@
+.contact {
+    height: 500px;
+    color:#EEEEEE;
+    text-align: left;
+    &-wrapper{
+        width: 50%;
+        margin: 0 auto;
+    }
+    ul {
+        list-style: none;
+        & li {
+            padding: 0 32px 0 0;
+            & svg{
+                padding-right: 15px;
+                vertical-align: middle;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+#earth {
+    width: 120px;
+    height: 120px;
+}
+
+#satellite {
+    /* Planet Style*/
+    position: relative;
+    left: 90%;
+    height: 30px;
+    width: 30px;
+    transform: rotate(5deg);
+}
+
+#satellite-orbit {
+    /* For Section #2 */
+    position: relative;
+    top: 70px;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: -210px;
+    margin-left: -140px;
+
+  -webkit-animation: spin-left 12s linear infinite;
+    -moz-animation: spin-left 12s linear infinite;
+      -ms-animation: spin-left 12s linear infinite;
+       -o-animation: spin-left 12s linear infinite;
+          animation: spin-left 12s linear infinite;
+}
+
+@-webkit-keyframes spin-left {
+    100% {
+      -webkit-transform: rotate(360deg);
+         -moz-transform: rotate(360deg);
+          -ms-transform: rotate(360deg);
+           -o-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-left {
+    100% {
+        -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+             -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+      }
+}

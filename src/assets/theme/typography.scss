@@ -1,0 +1,16 @@
+$theme-typography: mat-typography-config(
+  $font-family:   '"Helvetica", sans-serif',
+  $display-4:     mat-typography-level(112px, 112px, 300, 'Futura', $letter-spacing: -0.05em), // Large, one-off header, usually at the top of the page (e.g. a hero header).
+  $display-3:     mat-typography-level(50px, 50px, 400, 'Futura', $letter-spacing: -0.02em), // Large, one-off header, usually at the top of the page (e.g. a hero header).
+  $display-2:     mat-typography-level(24px, 30px, 400, 'Futura', $letter-spacing: -0.005em), // Large, one-off header, usually at the top of the page (e.g. a hero header).
+  $display-1:     mat-typography-level(30px, 35px, 200), // Large, one-off header, usually at the top of the page (e.g. a hero header).
+  $headline:      mat-typography-level(24px, 32px, 400), // Section heading corresponding to the <h1> tag.
+  $title:         mat-typography-level(20px, 32px, 500), // Section heading corresponding to the <h2> tag.
+  $subheading-2:  mat-typography-level(16px, 28px, 400), // Section heading corresponding to the <h3> tag.
+  $subheading-1:  mat-typography-level(15px, 24px, 400), // Section heading corresponding to the <h4> tag.
+  $body-2:        mat-typography-level(14px, 24px, 500), // Bolder body text.
+  $body-1:        mat-typography-level(14px, 20px, 400), // Base body text.
+  $caption:       mat-typography-level(12px, 20px, 400), // Smaller body and hint text.
+  $button:        mat-typography-level(14px, 14px, 500), // Buttons and anchors.
+  $input:         mat-typography-level(inherit, 1.125, 400) // Form input fields. // Line-height must be unit-less fraction of the font-size.
+) 

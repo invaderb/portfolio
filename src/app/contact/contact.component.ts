@@ -12,4 +12,7 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public shoot(){
+    console.log('earth has been shot')
+  }
 }

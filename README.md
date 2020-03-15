@@ -25,3 +25,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+TODO: 
+- finish portfolio section
+https://www.queness.com/post/14577/create-a-simple-responsive-portfolio-page-with-filtering-and-hover-effect
+https://www.kunkalabs.com/mixitup/
+https://www.queness.com/resources/html/simple-portfolio-page/index.html
+- finish skill section graph
+- finish contact section
+- finish about section
+- finish CICD
+https://travis-ci.com/getting_started
+- implement material theme
+http://mcg.mbitson.com/#!?mcgpalette0=%231b2735&mcgpalette1=%23707070&mcgpalette2=%23eeeeee&mcgpalette3=%23090a0f&mcgpalette4=%23395ab5
+- implement high contrast
+- implement blog
+https://braydonharriscom.prismic.io/documents/working/
+- loading spinner
+
+search for developer skill graph design example
+
+https://codeburst.io/10-awesome-web-developer-portfolios-d266b32e6154
+https://caferati.me/
+
+
