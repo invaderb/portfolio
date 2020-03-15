@@ -57,3 +57,8 @@ https://codeburst.io/10-awesome-web-developer-portfolios-d266b32e6154
 https://caferati.me/
 
 
+glitching font? possibly look into
+https://codepen.io/pgalor/pen/OeRWJQ
+
+Luminus on hover
+https://codepen.io/onecastell/pen/VwZWBvr
