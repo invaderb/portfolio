@@ -28,16 +28,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 TODO: 
-- finish portfolio section
-- - add content
 - finish tech section
-- - add colored icons
-- - finish design elements small lines under headers animated icons
+- - animated icons
 - finish contact section 
 - - add links
 - finish about section
 - - add links
-
+- final desing touches negative spacing, animations, mobile/responsive
+- fix portfolio images
 - themeing
 - - finsih palettes
 - - implement high contrast

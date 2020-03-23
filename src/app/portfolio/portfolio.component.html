@@ -4,89 +4,26 @@
         <div fxFlex>
             <div>
                 <button mat-flat-button color="primary" type="button" data-filter="all" class="margin-right--10">All</button>
-                <button mat-flat-button color="primary" type="button" data-filter=".app" class="margin-right--10">App</button>
-                <button mat-flat-button color="primary" type="button" data-filter=".card" class="margin-right--10">Card</button>
-                <button mat-flat-button color="primary" type="button" data-filter=".logo" class="margin-right--10">Logo</button>
+                <button mat-flat-button color="primary" type="button" data-filter=".web" class="margin-right--10">Web</button>
+                <button mat-flat-button color="primary" type="button" data-filter=".game" class="margin-right--10">Game</button>
+                <button mat-flat-button color="primary" type="button" data-filter=".music" class="margin-right--10">Music</button>
             </div>
             <div id="portfoliolist">
                 <div class="target">
-                    <div class="mix portfolio-item app">
+                    <div *ngFor="let item of items" class="mix portfolio-item" [ngClass]="item.tags[0]">
                         <div class="portfolio-wrapper">
-                            <img src="assets/images/ats.png" alt="" srcset="">
+                            <img src="{{item.data.image.url}}" alt="" srcset="">
                             <div class="label">
                                 <div class="label-text">
-                                  <a class="text-title">Test Document</a> 
-                                  <span class="text-category">App</span>
+                                  <a class="text-title">{{item.data.title[0].text}}</a> 
+                                  <span class="text-category">{{item.data.category}}</span>
                                 </div>
                                 <div class="label-bg"> </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="mix portfolio-item card">
-                        <div class="portfolio-wrapper">
-                            <img src="assets/images/ats.png" alt="" srcset="">
-                            <div class="label">
-                                <div class="label-text">
-                                  <a class="text-title">Test Document</a> 
-                                  <span class="text-category">App</span>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix portfolio-item card">
-                        <div class="portfolio-wrapper">
-                            <img src="assets/images/ats.png" alt="" srcset="">
-                            <div class="label">
-                                <div class="label-text">
-                                  <a class="text-title">Test Document</a> 
-                                  <span class="text-category">App</span>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix portfolio-item logo">
-                        <div class="portfolio-wrapper">
-                            <img src="assets/images/ats.png" alt="" srcset="">
-                            <div class="label">
-                                <div class="label-text">
-                                  <a class="text-title">Test Document</a> 
-                                  <span class="text-category">App</span>
-                                </div>
-                                <div class="label-bg"> </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mix portfolio-item logo">
-                      <div class="portfolio-wrapper">
-                          <img src="assets/images/ats.png" alt="" srcset="">
-                          <div class="label">
-                              <div class="label-text">
-                                <a class="text-title">Test Document</a> 
-                                <span class="text-category">App</span>
-                              </div>
-                              <div class="label-bg"> </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mix portfolio-item logo">
-                    <div class="portfolio-wrapper">
-                        <img src="assets/images/ats.png" alt="" srcset="">
-                        <div class="label">
-                            <div class="label-text">
-                              <a class="text-title">Test Document</a> 
-                              <span class="text-category">App</span>
-                            </div>
-                            <div class="label-bg"> </div>
                         </div>
                     </div>
                 </div>
-
-                </div>
-
             </div>
-
         </div>
     </div>
 </div>

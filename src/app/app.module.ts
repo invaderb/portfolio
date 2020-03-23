@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule }    from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { MatButtonModule } from '@angular/material/button';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
@@ -24,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     MatButtonModule,
     AppRoutingModule,
     FlexLayoutModule,

@@ -1,8 +1,49 @@
 .skills {
     min-height: 600px;
     color: #EEEEEE;
+    h4 {
+        margin-bottom: 0 !important;
+    }
+    hr {
+        margin: 0 auto;
+        width: 5%;
+        border-color: #3f51b5;
+    }
     & svg {
         width: 60px;
-        height: 60px;;
+        height: 60px;
+    }
+    .fa-angular {
+        color: #dd0031;
+    }
+    .fa-ember {
+        color: #e04d39;
+    }
+    .fa-vuejs {
+        color: #41b783;
+    }
+    .fa-sass {
+        color: #ce649a;
+    }
+    .fa-html5{
+        color: #ef6429;
+    }
+    .fa-css3 {
+        color: #27a0e1;
+    }
+    .fa-php {
+        color: #8892BF;
+    }
+    .fa-node-js {
+        color: #679f63;
+    }
+    .fa-git {
+        color: #f05033;
+    }
+    .fa-atlassian {
+        color: #2684ff;
+    }
+    .fa-adobe {
+        color: #f00;
     }
 }
