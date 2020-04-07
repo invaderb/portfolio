@@ -1,0 +1,25 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - '12'
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - npm install
+  - npm install @angular/cli
+
+script:
+  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  - ng build --prod --base-href https://invaderb.github.io/
