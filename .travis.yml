@@ -15,12 +15,13 @@ install:
 script:
   - ng build --prod
   - cp dist/braydonharris/index.html dist/braydonharris/404.html
-  - 
+  - mkdir docs
+  - cp -a dist/braydonharris/. /docs/
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/braydonharris
+  local_dir: docs
   on:
     branch: master
