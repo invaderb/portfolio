@@ -13,8 +13,9 @@ install:
   - npm install @angular/cli
 
 script:
-  - ng build --prod --base-href https://invaderb.github.io/
+  - ng build --prod
   - cp dist/braydonharris/index.html dist/braydonharris/404.html
+  - 
 
 deploy:
   provider: pages
