@@ -14,3 +14,11 @@ install:
 
 script:
   - ng build --prod --base-href https://invaderb.github.io/
+
+  deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/braydonharris
+  on:
+    branch: master
