@@ -14,6 +14,7 @@ install:
 
 script:
   - ng build --prod --base-href https://invaderb.github.io/
+  - cp dist/braydonharris/index.html dist/braydonharris/404.html
 
 deploy:
   provider: pages
